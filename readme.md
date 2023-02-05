@@ -23,6 +23,6 @@ docker exec -ti php-crash-mysql-1 bash
 
 To enter the database (run the command inside the db container)
 ```
-mysql -uroot -p php-website
+mysql -uroot -p php-db
 ```
 and add password
