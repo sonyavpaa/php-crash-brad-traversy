@@ -1,7 +1,7 @@
 <?php
 
 $host = "mysql";
-$dbname = "php-db";
+$dbname = "php-website";
 $charset = "utf8";
 $port = "3306";
 
@@ -9,9 +9,9 @@ $port = "3306";
 
 try {
     $pdo = new PDO(
-        dsn: "mysql:host=$host;dbname=$dbname;charset=$charset;port=$port",
-        username: "root",
-        password: getenv('DB_PASS'),
+        "mysql:host=$host;dbname=$dbname;charset=$charset;port=$port",
+       "root",
+       getenv('DB_PASS'),
     );
 
     $persons = $pdo->query("SELECT * FROM Persons");
@@ -24,8 +24,5 @@ try {
 }
 
 catch (PDOException $e) {
-    throw new PDOException(
-        message: $e->getMessage(),
-        code: (int)$e->getCode()
-    );
+    echo "DataBase Error: The user could not be added.<br>".$e->getMessage();
 }
