@@ -1,4 +1,5 @@
 node_modules
 script.txt
+.DS_Store
 .env
 notes.md
