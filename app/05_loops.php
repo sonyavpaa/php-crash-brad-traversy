@@ -11,6 +11,10 @@
   }
 */
 
+for($x = 0; $x <= 10; $x++) {
+  echo 'Times ' . $x . '<br>';
+}
+
 
 /* ------------ While Loop ------------ */
 
@@ -20,6 +24,12 @@
   // code to be executed
   }
 */
+// $x = 1;
+// while($x != 5) {
+//   echo 'This is not 5' . '<br>';
+//   $x++;  
+// }
+
 
 
 /* ---------- Do While Loop --------- */
@@ -33,6 +43,11 @@
 do...while loop will always execute the block of code once, even if the condition is false.
 */
 
+// $x = 1;
+// do {
+//   echo 'Number ' . $x . '<br>';
+//   $x++;
+// } while($x <= 5); 
 
 
 /* ---------- Foreach Loop ---------- */
@@ -43,3 +58,17 @@ do...while loop will always execute the block of code once, even if the conditio
   // code to be executed
   }
 */
+
+$news = ['Good News', 'Fake News', 'Cake News'];
+
+// for($x = 0; $x < count($news); $x++) {
+//   echo $news[$x] . '<br>';
+// }
+
+// foreach($news as $single_news) {
+//   echo $single_news . '<br>';
+// }
+
+foreach($news as $index => $single_news) {
+  echo $index . ' - ' . $single_news . '<br>';
+}
