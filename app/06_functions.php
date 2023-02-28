@@ -12,3 +12,11 @@
     // code to be executed
   }
 */
+
+
+
+$sentence = fn() => "Banjo";
+
+echo $sentence();
+
+
